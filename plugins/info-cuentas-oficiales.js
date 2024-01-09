@@ -5,10 +5,10 @@ let str = `💙 𝘽𝙄𝙀𝙉𝙑𝙀𝙉𝙄𝘿𝙊(𝘼) 𝘼 𝙇𝘼𝙎
 💜 𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝙏𝙃𝙀 𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇 𝘼𝘾𝘾𝙊𝙐𝙉𝙏𝙎
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ *INSTAGRAM - ASISTENCIA*
-*${}*
+*${IG}*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ✅ *FACEBOOK*
-*${}*
+*${FB}*
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *Si tienen dudas, sugerencias, o preguntas solo escriban por Instagram.*\n
 *If you have doubts, suggestions or questions just write on Instagram.*`
