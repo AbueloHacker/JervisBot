@@ -9,5 +9,5 @@ conn.reply(m.chat, lenguajeGB.smsSetW(), fkontak, m)
 handler.command = ['setwelcome', 'bienvenida'] 
 handler.botAdmin = true
 handler.admin = true
-handler.group = true
+handler.group = false
 export default handler
