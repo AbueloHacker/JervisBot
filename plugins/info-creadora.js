@@ -9,7 +9,7 @@ const cat = `𝙇𝙤𝙧𝙙💀
 *---------------------*
 
 *CENTER BOT*
-*PROXIMAMENTE@GMAIL.COM*
+*proximamente@gmail.com*
 
 BOT - 𝘼𝙎𝙄𝙎𝙏𝙀𝙉𝘾𝙄𝘼
 *${asistencia}*`
