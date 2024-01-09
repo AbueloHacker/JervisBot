@@ -141,7 +141,7 @@ console.log(e)
 }}
 handler.command = /^(grouptime|gctime|grupotiempo)$/i
 handler.botAdmin = true
-handler.group = true 
+handler.group = false 
 handler.admin = true
 
 export default handler
