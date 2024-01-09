@@ -6,7 +6,7 @@ let res = await conn.groupRevokeInvite(m.chat)
 conn.reply(m.chat, lenguajeGB.smsRestGp(), + '\n\n*https://chat.whatsapp.com/' + res + '*', fkontak, m)}
 //conn.sendButton(m.chat, wm, lenguajeGB.smsRestGp() + '\n\n*https://chat.whatsapp.com/' + res + '*', pp, [[lenguajeGB.smsConMenu(), `/menu`]], fkontak, m)}
 handler.command = ['nuevolink', 'nuevoenlace', 'revoke', 'resetlink'] 
-handler.group = true
+handler.group = false
 handler.admin = true
 handler.botAdmin = true
 
