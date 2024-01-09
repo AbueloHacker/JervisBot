@@ -97,7 +97,7 @@ if (!isNumber(user.stroberi)) user.stroberi = 0
 	
 if (!isNumber(user.counterPrivate)) user.counterPrivate = 0	                    		    
 if (!isNumber(user.afk)) user.afk = -1
-//if (!('autolevelup' in user))  user.autolevelup = true
+//if (!('autolevelup' in user))  user.autolevelup = false
 if (!isNumber(user.reporte)) user.reporte = 0
 if (!('role' in user)) user.role = '*NOVATO(A)* 🪤'
 if (!isNumber(user.agility)) user.agility = 0
@@ -948,10 +948,10 @@ if (chat) {
 if (!('isBanned' in chat)) chat.isBanned = false                    
 if (!('welcome' in chat)) chat.welcome = false                    
 if (!('detect' in chat)) chat.detect = true                    
-if (!('sWelcome' in chat)) chat.sWelcome = ''                    
-if (!('sBye' in chat)) chat.sBye = ''                    
-if (!('sPromote' in chat)) chat.sPromote = ''                    
-if (!('sDemote' in chat)) chat.sDemote = '' 
+if (!('sWelcome' in chat)) chat.sWelcome = false                    
+if (!('sBye' in chat)) chat.sBye = false                    
+if (!('sPromote' in chat)) chat.sPromote = false                   
+if (!('sDemote' in chat)) chat.sDemote = false 
 if (!('delete' in chat)) chat.delete = false                   
 if (!('modohorny' in chat)) chat.modohorny = false                    
 if (!('stickers' in chat)) chat.stickers = false                   
@@ -980,10 +980,10 @@ global.db.data.chats[m.chat] = {
 isBanned: false,
 welcome: false,
 detect: true,
-sWelcome: '',
-sBye: '',
-sPromote: '',
-sDemote: '', 
+sWelcome: false,
+sBye: false,
+sPromote: false,
+sDemote: false, 
 delete: false,
 modohorny: false,
 stickers: false,
@@ -1372,7 +1372,7 @@ case 'remove':
 if (chat.welcome) {
 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
 for (let user of participants) {
-let pp = gataMenu.getRandom()
+let pp = BotMenu.getRandom()
 try {
 pp = await this.profilePictureUrl(user, 'image')
 } catch (e) {
@@ -1401,7 +1401,7 @@ mentionedJid:[user],
 "showAdAttribution": true,
 "renderLargerThumbnail": true,
 "thumbnail": apii.data, 
-"title": [wm, '💀 𝙇𝙤𝙧𝙙-𝘽𝙤𝙩' + gt + ' 💀', '💀 Batidas Yurimaguas'].getRandom(),
+"title": [wm, '💀 𝙇𝙤𝙧𝙙-𝘽𝙤𝙩' + gt + '💀', 'Batidas Yurimaguas'].getRandom(),
 "containsAutoReply": true,
 "mediaType": 1, 
 sourceUrl: [md, nna, nn2, yt, ig, paypal, fb].getRandom()}}}, { quoted: fkontak2 })
@@ -1465,7 +1465,7 @@ let chat = global.db.data.chats[msg?.chat] || {}
 if (!chat?.delete) return 
 if (!msg) return 
 if (!msg?.isGroup) return 
-const antideleteMessage = `*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 𓃠*
+const antideleteMessage = `*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 💀*
 ${lenguajeGB['smsCont20']()} @${participant.split`@`[0]}
 ${lenguajeGB['smsCont21']()}
 *╰━━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━╯*`.trim();
