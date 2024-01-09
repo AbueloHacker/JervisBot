@@ -139,7 +139,7 @@ await conn.sendFile(m.chat, pp, 'gata.mp4', menuA, fkontak)
 //await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
   
-} if (command == 'hornymenu'){ //comandos+18
+} if (command == ''){ //comandos+18
 let pp = './src/+18.jpg'
 
 let menuA = `😏 ${lenguajeGB['smsConfi2']()} *${username}*
