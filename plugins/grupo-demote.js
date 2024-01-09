@@ -24,7 +24,7 @@ conn.groupParticipantsUpdate(m.chat, [user], 'demote')
 conn.reply(m.chat, lenguajeGB['smsAvisoEG']() + lenguajeGB['smsDemott3'](), fkontak, m)
 }}
 handler.command = /^(demote|quitarpoder|quitaradmin)$/i
-handler.group = true
+handler.group = false
 handler.admin = true
 handler.botAdmin = true
 export default handler
