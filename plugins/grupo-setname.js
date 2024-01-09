@@ -16,7 +16,7 @@ conn.reply(m.chat, lenguajeGB.smsNam1(), fkontak, m)
 throw lenguajeGB['smsNam3']()
 }}
 handler.command = /^(setname|newnombre|nuevonombre)$/i
-handler.group = true
+handler.group = false
 handler.admin = true
 handler.botAdmin = true
 export default handler 
