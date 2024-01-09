@@ -6,7 +6,9 @@ conn.reply(m.chat, lenguajeGB.smsSetW(), fkontak, m)
 //conn.sendButton(m.chat, wm, lenguajeGB['smsSetW'](), null, [[lenguajeGB.smsConMenu(), `/menu`]], fkontak, m)
 } else throw `${lenguajeGB['smsSetW2']()}`
 }
+handler.tags = ["owner"]
 handler.command = ['setwelcome', 'bienvenida'] 
+handler.owner = true
 handler.botAdmin = true
 handler.admin = true
 handler.group = false
