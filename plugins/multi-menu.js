@@ -86,60 +86,7 @@ const temaX = [['pornololi', 'nsfwloli'], ['pornopies', 'nsfwfoot'], ['pornoass'
 ['pornorezero', 'nsfwrezero'], ['pornotatsumaki', 'nsfwtatsumaki'], ['pornonaruto', 'nsfwnaruto'], ['pornokitagawa', 'nsfwkitagawa'], ['pornovid', 'nsfwvid'],
 ['pornovid2', 'nsfwvid2'], ['pornovidlesbi', 'nsfwvidlesbi'], ['pornovidgay', 'nsfwvidgay'], ['pornovidbisexual', 'nsfwvidbisexual'], ['pornovidrandom', 'nsfwvidrandom']]
 
-if (command == 'audioefectomenu'){ //audio
-let menuA = `🎧 ${lenguajeGB['smsConfi2']()} *${username}*
-
-╭┄〔 *${wm}* 〕┄⊱
-┊დ *${week}, ${date}*
-┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
-┊
-┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
-┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
-┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
-╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
-
-⠇ ${lenguajeGB['smsTex2']()} 🧰
-∘ _${usedPrefix}bass_
-∘ _${usedPrefix}blown_
-∘ _${usedPrefix}deep_
-∘ _${usedPrefix}earrape_
-∘ _${usedPrefix}fast_
-∘ _${usedPrefix}fat_
-∘ _${usedPrefix}nightcore_
-∘ _${usedPrefix}reverse_
-∘ _${usedPrefix}robot_
-∘ _${usedPrefix}slow_
-∘ _${usedPrefix}smooth_
-∘ _${usedPrefix}tupai_
-`.trim()
-await conn.sendFile(m.chat, pp, 'gata.mp4', menuA, fkontak)
-//conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
-
-  
-} if (command == 'buscarmenu'){ //buscador
-let menuA = `🎈 ${lenguajeGB['smsConfi2']()} *${username}*
-
-╭┄〔 *${wm}* 〕┄⊱
-┊დ *${week}, ${date}*
-┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
-┊
-┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
-┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
-┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
-╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
-⠇ ${lenguajeGB['smsTex1']()} 🔍
-∘ _${usedPrefix}animeinfo *texto*_
-∘ _${usedPrefix}mangainfo *texto*_
-∘ _${usedPrefix}google *texto*_
-∘ _${usedPrefix}letra | lirik *texto*_
-∘ _${usedPrefix}ytsearch | yts *texto*_
-∘ _${usedPrefix}wiki | wikipedia *texto*_
-`.trim()
-await conn.sendFile(m.chat, pp, 'gata.mp4', menuA, fkontak)
-//await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
-
-  
-} if (command == ''){ //comandos+18
+if (command == ''){ //comandos+18
 let pp = './src/+18.jpg'
 
 let menuA = `😏 ${lenguajeGB['smsConfi2']()} *${username}*
@@ -272,121 +219,6 @@ buttonText: lenguajeGB.smsList6(),
 sections }
 conn.sendMessage(m.chat, listMessage, {quoted: fkontak})
   
-  
-} if (command == 'convertidormenu'){ //convertidor
-let menuA = `📍 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭┄〔 *${wm}* 〕┄⊱
-┊დ *${week}, ${date}*
-┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
-┊
-┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
-┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
-┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
-╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
-⠇ ${lenguajeGB['smsTex8']()} 🛰️
-∘ _${usedPrefix}toimg | img | jpg *sticker*_
-∘ _${usedPrefix}tomp3 | mp3 *video o nota de voz*_
-∘ _${usedPrefix}tovn | vn *video o audio*_
-∘ _${usedPrefix}tovideo *audio*_
-∘ _${usedPrefix}tourl *video, imagen*_
-∘ _${usedPrefix}toenlace  *video, imagen o audio*_
-∘ _${usedPrefix}tts es *texto*_
-`.trim()
-await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)  
-
-  
-} if (command == 'descargasmenu'){ //descargas
-let menuA = `🪄 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭┄〔 *${wm}* 〕┄⊱
-┊დ *${week}, ${date}*
-┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
-┊
-┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
-┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
-┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
-╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
-⠇ ${lenguajeGB['smsTex9']()} 🚀
-∘ _${usedPrefix}imagen | image *texto*_
-∘ _${usedPrefix}pinterest | dlpinterest *texto*_
-∘ _${usedPrefix}wallpaper|wp *texto*_
-∘ _${usedPrefix}play | play2 *texto o link*_
-∘ _${usedPrefix}play.1 *texto o link*_
-∘ _${usedPrefix}play.2 *texto o link*_ 
-∘ _${usedPrefix}ytmp3 | yta *link*_
-∘ _${usedPrefix}ytmp4 | ytv *link*_
-∘ _${usedPrefix}pdocaudio | ytadoc *link*_
-∘ _${usedPrefix}pdocvieo | ytvdoc *link*_
-∘ _${usedPrefix}tw | twdl | twitter *link*_
-∘ _${usedPrefix}spotify | music *text*_
-∘ _${usedPrefix}facebook | fb *link*_
-∘ _${usedPrefix}instagram *link video o imagen*_
-∘ _${usedPrefix}verig | igstalk *usuario(a)*_
-∘ _${usedPrefix}ighistoria | igstory *usuario(a)*_
-∘ _${usedPrefix}tiktok *link*_
-∘ _${usedPrefix}tiktokfoto | tiktokphoto *usuario(a)*_
-∘ _${usedPrefix}vertiktok | tiktokstalk *usuario(a)*_
-∘ _${usedPrefix}mediafire | dlmediafire *link*_
-∘ _${usedPrefix}clonarepo | gitclone *link*_
-∘ _${usedPrefix}clima *país ciudad*_
-∘ _${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'consejo' : 'advice'}_ 
-∘ _${usedPrefix}frase_
-∘ _${usedPrefix}${lenguajeGB.lenguaje() == 'es' ? 'frase2' : 'phrase2'}_
-∘ _${usedPrefix}morse codificar *texto*_
-∘ _${usedPrefix}morse decodificar *morse*_
-`.trim()
-await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
-
-  
-} if (command == 'juegosmenu'){ //fun
-let menuA = `🎠 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭┄〔 *${wm}* 〕┄⊱
-┊დ *${week}, ${date}*
-┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
-┊
-┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
-┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
-┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
-╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
-⠇ ${lenguajeGB['smsTex10']()} 🎡
-∘ _${usedPrefix}mates | matemáticas | math_
-∘ _${usedPrefix}ppt *piedra : papel : tijera*_
-∘ _${usedPrefix}tictactoe | ttt *sala*_
-∘ _${usedPrefix}deltictactoe | delttt_
-∘ _${usedPrefix}topgays_
-∘ _${usedPrefix}topotakus_
-∘ _${usedPrefix}toppajer@s_
-∘ _${usedPrefix}topput@s_
-∘ _${usedPrefix}topintegrantes | topintegrante_
-∘ _${usedPrefix}toplagrasa | topgrasa_
-∘ _${usedPrefix}toppanafrescos | toppanafresco_
-∘ _${usedPrefix}topshiposters | topshipost_
-∘ _${usedPrefix}toplindos | toplind@s_
-∘ _${usedPrefix}topfamosos | topfamos@s_
-∘ _${usedPrefix}topparejas | top5parejas_
-∘ _${usedPrefix}gay | gay *@tag*_
-∘ _${usedPrefix}gay2 *nombre : @tag*_
-∘ _${usedPrefix}lesbiana *nombre : @tag*_
-∘ _${usedPrefix}manca *nombre : @tag*_
-∘ _${usedPrefix}manco *nombre : @tag*_
-∘ _${usedPrefix}pajero *nombre : @tag*_
-∘ _${usedPrefix}pajera *nombre : @tag*_
-∘ _${usedPrefix}puto *nombre : @tag*_
-∘ _${usedPrefix}puta *nombre : @tag*_
-∘ _${usedPrefix}rata *nombre : @tag*_
-∘ _${usedPrefix}love *nombre : @tag*_
-∘ _${usedPrefix}doxear *nombre : @tag*_
-∘ _${usedPrefix}doxxeame_
-∘ _${usedPrefix}pregunta *texto*_
-∘ _${usedPrefix}apostar | slot *cantidad*_
-∘ _${usedPrefix}formarpareja_
-∘ _${usedPrefix}dado_
-∘ _${usedPrefix}verdad_
-∘ _${usedPrefix}reto_
-∘ _${usedPrefix}multijuegos_
-∘ _${usedPrefix}juegos_
-`.trim()
-await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
-
   
 } if (command == 'grupomenu'){ //grupo
 let menuA = `🔰 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
@@ -601,71 +433,6 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
   
-} if (command == 'randommenu'){ //randomm
-let menuA = `⛩️ ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭┄〔 *${wm}* 〕┄⊱
-┊დ *${week}, ${date}*
-┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
-┊
-┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
-┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
-┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
-╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
-⠇ ${lenguajeGB['smsTex23']()} 🧩
-∘ _${usedPrefix}chica_
-∘ _${usedPrefix}chico_
-∘ _${usedPrefix}cristianoronaldo_
-∘ _${usedPrefix}messi_
-∘ _${usedPrefix}meme_
-∘ _${usedPrefix}meme2_
-∘ _${usedPrefix}itzy_
-∘ _${usedPrefix}blackpink_
-∘ _${usedPrefix}kpop *blackpink : exo : bts*_
-∘ _${usedPrefix}lolivid_
-∘ _${usedPrefix}loli_
-∘ _${usedPrefix}navidad_
-∘ _${usedPrefix}ppcouple_
-∘ _${usedPrefix}neko_
-∘ _${usedPrefix}waifu_
-∘ _${usedPrefix}akira_
-∘ _${usedPrefix}akiyama_
-∘ _${usedPrefix}anna_
-∘ _${usedPrefix}asuna_
-∘ _${usedPrefix}ayuzawa_
-∘ _${usedPrefix}boruto_
-∘ _${usedPrefix}chiho_
-∘ _${usedPrefix}chitoge_
-∘ _${usedPrefix}deidara_
-∘ _${usedPrefix}erza_
-∘ _${usedPrefix}elaina_
-∘ _${usedPrefix}eba_
-∘ _${usedPrefix}emilia_
-∘ _${usedPrefix}hestia_
-∘ _${usedPrefix}hinata_
-∘ _${usedPrefix}inori_
-∘ _${usedPrefix}isuzu_
-∘ _${usedPrefix}itachi_
-∘ _${usedPrefix}itori_
-∘ _${usedPrefix}kaga_
-∘ _${usedPrefix}kagura_
-∘ _${usedPrefix}kaori_
-∘ _${usedPrefix}keneki_
-∘ _${usedPrefix}kotori_
-∘ _${usedPrefix}kurumi_
-∘ _${usedPrefix}madara_
-∘ _${usedPrefix}mikasa_
-∘ _${usedPrefix}miku_
-∘ _${usedPrefix}minato_
-∘ _${usedPrefix}naruto_
-∘ _${usedPrefix}nezuko_
-∘ _${usedPrefix}sagiri_
-∘ _${usedPrefix}sasuke_
-∘ _${usedPrefix}sakura_
-∘ _${usedPrefix}cosplay_
-`.trim()
-await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
-
-  
 } if (command == 'rpgmenu'){ //rpg
 let menuA = `🪅 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
 let menuB = `╭┄〔 *${wm}* 〕┄⊱
@@ -724,42 +491,6 @@ let menuB = `╭┄〔 *${wm}* 〕┄⊱
 await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 
 
-} if (command == 'stickermenu'){ //sticker
-let menuA = `🧸 ${lenguajeGB['smsConfi2']()} *${username}*`.trim()
-let menuB = `╭┄〔 *${wm}* 〕┄⊱
-┊დ *${week}, ${date}*
-┊დ *${lenguajeGB['smsBotonM4']()} » ${Object.keys(global.db.data.users).length}* 
-┊
-┊დ *${lenguajeGB['smsBotonM5']()} »* ${role}
-┊დ *${lenguajeGB['smsBotonM6']()} » ${level}*
-┊დ *${lenguajeGB['smsBotonM7']()} »* ${user.premiumTime > 0 ? '✅' : '❌'}
-╰┄┄┄┄〔 *𓃠 ${vs}* 〕┄┄┄┄⊱
-⠇ ${lenguajeGB['smsTex22']()} 🎐
-∘ _${usedPrefix}sticker | s *imagen o video*_
-∘ _${usedPrefix}sticker | s *url de tipo jpg*_
-∘ _${usedPrefix}emojimix *😺+😆*_
-∘ _${usedPrefix}scircle | círculo *imagen*_
-∘ _${usedPrefix}semoji | emoji *tipo emoji*_
-∘ _${usedPrefix}attp *texto*_
-∘ _${usedPrefix}attp2 *texto*_
-∘ _${usedPrefix}ttp *texto*_
-∘ _${usedPrefix}ttp2 *texto*_
-∘ _${usedPrefix}ttp3 *texto*_
-∘ _${usedPrefix}ttp4 *texto*_
-∘ _${usedPrefix}ttp5 *texto*_
-∘ _${usedPrefix}ttp6 *texto*_
-∘ _${usedPrefix}palmaditas | pat *@tag*_
-∘ _${usedPrefix}bofetada | slap *@tag*_
-∘ _${usedPrefix}besar | kiss *@tag*_
-∘ _${usedPrefix}alimentar | food *@tag*_
-∘ _${usedPrefix}dado_
-∘ _${usedPrefix}wm *packname|author*_
-∘ _${usedPrefix}wm *texto1|texto2*_
-∘ _${usedPrefix}stickermarker *efecto : responder a imagen*_
-∘ _${usedPrefix}stickerfilter *efecto : responder a imagen*_
-∘ _${usedPrefix}cs *:* cs2_
-`.trim()
-await conn.sendButtonVid(m.chat, pp, menuA, menuB, lenguajeGB.smsBotonM1(), '.menu', lenguajeGB.smsBotonM2(), '/allmenu', lenguajeGB.smsBotonM3(), '#inventario', fkontak, adReply)
 } 
 } catch (e) {
 await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
@@ -768,8 +499,8 @@ console.log(e)}
 }
 handler.help = ['infomenu'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
-handler.command = ['audioefectomenu', 'buscarmenu', 'hornymenu', 'listaporno', 'listhorny', 'convertidormenu', 'descargasmenu', 'juegosmenu', 'grupomenu',
-'herramientasmenu', 'infomenu', 'makermenu', 'menulogos2', 'ownermenu', 'randommenu', 'rpgmenu', 'stickermenu'] 
+handler.command = [ 'buscarmenu' , 'listaporno' , 'grupomenu',
+'herramientasmenu', 'infomenu', 'makermenu', 'menulogos2', 'ownermenu', 'randommenu' ] 
 //handler.register = true
 handler.exp = 50
 export default handler
