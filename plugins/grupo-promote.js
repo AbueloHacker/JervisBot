@@ -26,7 +26,7 @@ conn.groupParticipantsUpdate(m.chat, [user], 'promote')
 conn.reply(m.chat, lenguajeGB['smsAvisoEG']() + lenguajeGB['smsDemott2'](), fkontak, m)
 }}
 handler.command = /^(promote|daradmin|darpoder)$/i
-handler.group = true
+handler.group = false
 handler.admin = true
 handler.botAdmin = true
 export default handler 
